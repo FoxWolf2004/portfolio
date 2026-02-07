@@ -1,0 +1,10 @@
+.text-section {
+    display: flex;
+    justify-content: end;
+    text-align: center;
+    flex-direction: column;
+}
+
+.text-section p {
+    color: #474747;
+}

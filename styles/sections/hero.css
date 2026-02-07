@@ -1,0 +1,48 @@
+.hero {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    padding: 250px 0px;
+
+}
+
+.AuthorAvatar{
+    display: block;
+    width: 200px;
+    height: auto;
+    justify-content: center;
+    border-radius: 100%;
+
+
+}
+.hero .wrapper {
+    gap: 30px;
+}
+.hero-SocIcons {
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-between;
+    justify-items: center;
+    text-align: center;
+}
+
+.hero-SocIcons a {
+    display: flex;
+    align-items: center;
+}
+
+.hero-SocIcons img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    
+}
+.hero-buttons {
+    display: flex;
+    flex-direction: row;
+
+    gap: 20px;
+
+}

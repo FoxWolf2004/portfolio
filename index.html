@@ -3,88 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/layout/wrapper.css">
+    <link rel="stylesheet" href="styles/base/base.css">
+    <link rel="stylesheet" href="styles/base/reset.css">
+    <link rel="stylesheet" href="styles/base/vars.css">
+
+    <link rel="stylesheet" href="styles/components/button.css">
+    <link rel="stylesheet" href="styles/components/text-section.css">
+
+    <link rel="stylesheet" href="styles/layout/footer.css">
+    <link rel="stylesheet" href="styles/layout/header.css">
+    
+
+    <link rel="stylesheet" href="styles/sections/hero.css">
+    <link rel="stylesheet" href="styles/sections/about.css">
+    <link rel="stylesheet" href="styles/sections/skills.css">
+    <link rel="stylesheet" href="styles/sections/contact.css">
+    <link rel="stylesheet" href="styles/sections/projects.css">
+
     <title>Ханов Никита портфолио </title>
 </head>
 <body>
         <header>
             <div class="wrapper">
                 <h2>Портфолио</h2>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#hero">Главная</a>
-                    </li>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#hero">Главная</a>
+                        </li>
 
-                    <li>
-                        <a href="#about">Обо мне</a>
-                    </li>
+                        <li>
+                            <a href="#about">Обо мне</a>
+                        </li>
 
-                    <li>
-                        <a href="#skills">Навыки</a>
-                    </li>
+                        <li>
+                            <a href="#skills">Навыки</a>
+                        </li>
 
-                    <li>
-                        <a href="#projects">Проекты</a>
-                    </li>
+                        <li>
+                            <a href="#projects">Проекты</a>
+                        </li>
 
-                    <li>
-                        <a href="#contact">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
+                        <li>
+                            <a href="#contact">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
             
         </header>
 
         <main> 
-            <div class="wrapper">
-                <section class="hero" id="hero">
-                <img src="https://avatars.githubusercontent.com/u/153081120?v=4" alt="Аватар Разработчика">
-                <h1>Junior Frontend Developer</h1>
-                <p>Изучаю веб-разработку и создаю свои первые проекты на React, TypeScript и других современных технологиях</p>
+            <section class="hero" id="hero">
+                <div class="wrapper">
 
-                <div class="hero-SocIcons">
-                    <a href="https://github.com/FoxWolf2004"><img src="" alt="GitHub"></a>
-                    <a href=""><img src="" alt="LinketIN"></a>
-                    <a type="eMail" href="mailto:"><img src="" alt="eMail"></a>
+                    <img src="https://avatars.githubusercontent.com/u/153081120?v=4" alt="Аватар Разработчика" class="AuthorAvatar">
+                    <h1>Junior Frontend Developer</h1>
+                    <p>Изучаю веб-разработку и создаю свои первые проекты на React, TypeScript и других современных технологиях</p>
+
+                    <div class="hero-SocIcons">
+                        <a href="https://github.com/FoxWolf2004"><img src="" /></a>
+                        <a href=""><img src="" /></a>
+                        <a type="eMail" href="mailto:"><img src="" alt="eMail"></a>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="" class="button-blue"><p>Посмотреть проекты</p></a>
+                        <a href="" class="button-blue-board"><p></p>Связаться со мной</a>
+                    </div>
+
                 </div>
-
-
-                <a href="">Посмотреть проекты</a>
-                <a href="">Связаться со мной</a>
+                
+                
             </section>
 
             <section class="about" id="about">
-                <div class="text-section">
+                <div class="wrapper">
+                    <div class="text-section">
                     <h2>Обо мне</h2>
                     <p>Привет! Я начинающий frontend разработчик, который только начинает свой путь в веб-разработке. С энтузиазмом изучаю новые технологии и создаю свои первые проекты.</p>
                 </div>
 
                 <article class="about-items">
 
-                    <div>
+                    <div class="about-item">
                         <img src="" alt="">
                         <h3>Изучаю код</h3>
                         <p>Стремлюсь писать чистый и понятный код, следуя лучшим практикам</p>
                     </div>
 
-                    <div>
+                    <div class="about-item">
                         <img src="" alt="">
                         <h3>Креативность</h3>
                         <p>Люблю создавать красивые и удобные интерфейсы для пользователей</p>
                     </div>
 
-                    <div>
+                    <div class="about-item">
                         <img src="" alt="">
                         <h3>Развиваюсь</h3>
                         <p>Постоянно учусь новым технологиям и совершенствую свои навыки</p>
                     </div>
                 </article>
+                </div>
+                
             </section>
 
 
             <section class="skills" id="skills">
-                <div class="text-section">
+                
+                <div class="wrapper">
+                    <div class="text-section">
                     <h2>Навыки</h2>
                     <p>Технологии, которые я знаю и изучаю</p>
                 </div>
@@ -113,10 +146,13 @@
                     </div>
 
                 </article>
+                </div>
+                
             </section>
 
             <section class="projects" id="projects">
-                <div class="text-section">
+                <div class="wrapper">
+                    <div class="text-section">
                     <h2>Проекты</h2>
                     <p>Мои учебные проекты и работы</p>
                 </div>
@@ -186,10 +222,13 @@
                     </div>
 
                 </div>
+                </div>
+                
             </section>
 
             <section class="contact" id="contact">
-                <div class="text-section">
+                <div class="wrapper">
+                    <div class="text-section">
                     <h2>Контакты</h2>
                     <p>Свяжитесь со мной</p>
 
@@ -205,8 +244,9 @@
 
 
                 </div>
+                </div>
+                
             </section>
-            </div>
         </main>
 
         <footer>
